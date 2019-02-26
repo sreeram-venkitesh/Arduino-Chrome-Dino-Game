@@ -50,7 +50,7 @@ void setup() {
  lcd.createChar(6,tree);
  lcd.setCursor(0,1);
  lcd.write(7);
- pinMode(buttonPin,INPUT);
+ pinMode(buttonPin,output);
  pinMode(buzzerPin,OUTPUT);
 }
 
@@ -77,7 +77,7 @@ if(!playState){
   startGame();
  }
  
- delay(100);
+ delay(1000);
 }
 
 
@@ -95,7 +95,8 @@ lcd.clear();
  lcd.print(score);
 
   int state = digitalRead(buttonPin);
-
+   digital write(10, HIGH);
+    
 
  if(state == HIGH)
  {
